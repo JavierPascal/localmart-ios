@@ -13,6 +13,9 @@
 		24FF85C4247F2661007E0D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF85C2247F2661007E0D1C /* Main.storyboard */; };
 		24FF85C6247F2662007E0D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FF85C5247F2662007E0D1C /* Assets.xcassets */; };
 		24FF85C9247F2662007E0D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF85C7247F2662007E0D1C /* LaunchScreen.storyboard */; };
+		2F5796DE2486BCF9006E8164 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5796DD2486BCF9006E8164 /* SignUpViewController.swift */; };
+		2F5796E02486BD04006E8164 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5796DF2486BD04006E8164 /* LoginViewController.swift */; };
+		2F5796E22486BD0D006E8164 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5796E12486BD0D006E8164 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		24FF85C5247F2662007E0D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24FF85C8247F2662007E0D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24FF85CA247F2662007E0D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5796DD2486BCF9006E8164 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2F5796DF2486BD04006E8164 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F5796E12486BD0D006E8164 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		24FF85BB247F2661007E0D1C /* localmart-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2F5796E32486BD17006E8164 /* ViewControllers */,
 				24FF85BC247F2661007E0D1C /* AppDelegate.swift */,
 				24FF85BE247F2661007E0D1C /* SceneDelegate.swift */,
-				24FF85C0247F2661007E0D1C /* ViewController.swift */,
 				24FF85C2247F2661007E0D1C /* Main.storyboard */,
 				24FF85C5247F2662007E0D1C /* Assets.xcassets */,
 				24FF85C7247F2662007E0D1C /* LaunchScreen.storyboard */,
 				24FF85CA247F2662007E0D1C /* Info.plist */,
 			);
 			path = "localmart-ios";
+			sourceTree = "<group>";
+		};
+		2F5796E32486BD17006E8164 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				24FF85C0247F2661007E0D1C /* ViewController.swift */,
+				2F5796DD2486BCF9006E8164 /* SignUpViewController.swift */,
+				2F5796DF2486BD04006E8164 /* LoginViewController.swift */,
+				2F5796E12486BD0D006E8164 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +157,10 @@
 			files = (
 				24FF85C1247F2661007E0D1C /* ViewController.swift in Sources */,
 				24FF85BD247F2661007E0D1C /* AppDelegate.swift in Sources */,
+				2F5796DE2486BCF9006E8164 /* SignUpViewController.swift in Sources */,
+				2F5796E02486BD04006E8164 /* LoginViewController.swift in Sources */,
 				24FF85BF247F2661007E0D1C /* SceneDelegate.swift in Sources */,
+				2F5796E22486BD0D006E8164 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
