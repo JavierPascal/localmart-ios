@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -142,65 +141,74 @@
                                 <color key="textColor" red="0.0" green="0.062745098040000002" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sPw-H6-9HC">
-                                <rect key="frame" x="20" y="99.5" width="374" height="216"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sPw-H6-9HC">
+                                <rect key="frame" x="20" y="99.5" width="374" height="168"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-01-9jz">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pg4-5B-FfG">
-                                                <rect key="frame" x="0.0" y="-1" width="23" height="56"/>
+                                                <rect key="frame" x="0.0" y="-1" width="23" height="32"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc2-ri-KZE">
-                                                <rect key="frame" x="33" y="0.0" width="68" height="54"/>
+                                                <rect key="frame" x="33" y="0.0" width="68" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVO-51-9tT">
-                                                <rect key="frame" x="111" y="0.0" width="263" height="54"/>
+                                                <rect key="frame" x="111" y="0.0" width="263" height="30"/>
+                                                <connections>
+                                                    <segue destination="avn-68-uqR" kind="show" id="A0s-6X-X0e"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wgZ-dO-90v">
-                                        <rect key="frame" x="0.0" y="62" width="374" height="54"/>
+                                        <rect key="frame" x="0.0" y="46" width="374" height="30"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalhotspot" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="t4K-Rx-RX3">
-                                                <rect key="frame" x="0.0" y="0.0" width="33.5" height="53.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="33.5" height="29.5"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Communities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNN-FH-xlK">
-                                                <rect key="frame" x="43.5" y="0.0" width="143" height="54"/>
+                                                <rect key="frame" x="43.5" y="0.0" width="143" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6J-Tg-YZv">
-                                                <rect key="frame" x="196.5" y="0.0" width="177.5" height="54"/>
+                                                <rect key="frame" x="196.5" y="0.0" width="177.5" height="30"/>
+                                                <connections>
+                                                    <segue destination="ICQ-J7-1uQ" kind="show" id="EYp-0N-lTq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YrV-aG-nhY">
-                                        <rect key="frame" x="0.0" y="124" width="374" height="54"/>
+                                        <rect key="frame" x="0.0" y="92" width="374" height="30"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vsd-iF-a1X">
-                                                <rect key="frame" x="0.0" y="-3" width="27" height="60"/>
+                                                <rect key="frame" x="0.0" y="-3" width="27" height="36"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lo-e1-d00">
-                                                <rect key="frame" x="37" y="0.0" width="89.5" height="54"/>
+                                                <rect key="frame" x="37" y="0.0" width="89.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qa-Vj-lwf">
-                                                <rect key="frame" x="136.5" y="0.0" width="237.5" height="54"/>
+                                                <rect key="frame" x="136.5" y="0.0" width="237.5" height="30"/>
+                                                <connections>
+                                                    <segue destination="bsT-ml-n6o" kind="show" id="iPB-jE-A7S"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wq8-7O-TBO">
-                                        <rect key="frame" x="0.0" y="186" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="138" width="374" height="30"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nGp-17-264">
                                                 <rect key="frame" x="0.0" y="-1" width="15.5" height="32.5"/>
@@ -214,6 +222,9 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p32-j6-OWI">
                                                 <rect key="frame" x="153.5" y="0.0" width="220.5" height="30"/>
+                                                <connections>
+                                                    <segue destination="nhe-bo-MKp" kind="show" id="ist-Gl-wVh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -236,6 +247,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPk-P4-FAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1319" y="2980"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="t3G-Mt-cFn">
+            <objects>
+                <viewController title="Profile" id="avn-68-uqR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNi-2r-z0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="P5H-Wm-tS5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5xA-Se-BTZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsw-xM-IGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319" y="3640"/>
+        </scene>
+        <!--Communities-->
+        <scene sceneID="ROE-aN-AG7">
+            <objects>
+                <viewController title="Communities" id="ICQ-J7-1uQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R6X-KB-TvX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5XB-0Z-xis"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vb9-B2-vrb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EW7-kM-2Oa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029" y="3635"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="idI-Al-AKm">
+            <objects>
+                <viewController title="Settings" id="bsT-ml-n6o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q57-kb-oEF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bHj-5g-W6w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jZ3-Sp-jlW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6f-jT-l94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2753" y="3630"/>
+        </scene>
+        <!--Help/Legal-->
+        <scene sceneID="Z42-57-syX">
+            <objects>
+                <viewController title="Help/Legal" id="nhe-bo-MKp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e9R-j5-c1P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oKV-Hk-fwm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Cp-kr-hhB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YD-oj-Z0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3506" y="3630"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="A4W-Sj-NYn">
