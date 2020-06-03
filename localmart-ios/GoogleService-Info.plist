@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>433981902780-hs5s8d4ou0o81camm01h142sot7qqmnb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.433981902780-hs5s8d4ou0o81camm01h142sot7qqmnb</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>433981902780-0ej92oj16v6l5281an4063ndr4fppapu.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD_z61RPrkZ9Dcs8VNdhp6UACghrTPLFH8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>433981902780</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mx.itesm.jpf.localmart-ios</string>
+	<key>PROJECT_ID</key>
+	<string>localmarto</string>
+	<key>STORAGE_BUCKET</key>
+	<string>localmarto.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:433981902780:ios:0d5ce13ce5c89aeb5165b9</string>
+	<key>DATABASE_URL</key>
+	<string>https://localmarto.firebaseio.com</string>
+</dict>
+</plist>
