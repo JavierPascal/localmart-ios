@@ -652,8 +652,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="i39-X5-gTb" kind="relationship" relationship="viewControllers" id="21S-58-Q4p"/>
                         <segue destination="LRL-ej-jjQ" kind="relationship" relationship="viewControllers" id="LQ6-2o-nFH"/>
+                        <segue destination="i39-X5-gTb" kind="relationship" relationship="viewControllers" id="21S-58-Q4p"/>
                         <segue destination="zwu-PL-jnl" kind="relationship" relationship="viewControllers" id="5cr-Pa-x8I"/>
                     </connections>
                 </tabBarController>
@@ -661,7 +661,7 @@
             </objects>
             <point key="canvasLocation" x="454" y="2224"/>
         </scene>
-        <!--Folder-->
+        <!--Search-->
         <scene sceneID="JNf-SC-ccT">
             <objects>
                 <viewController id="i39-X5-gTb" sceneMemberID="viewController">
@@ -671,7 +671,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yTm-C3-0fX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Folder" image="folder" catalog="system" id="n9t-jq-Huq"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="n9t-jq-Huq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrC-7W-SEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -679,10 +679,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="folder" catalog="system" width="128" height="95"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="iphone" width="882" height="1058"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="personalhotspot" catalog="system" width="128" height="75"/>
