@@ -13,6 +13,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var textfieldEmail: UITextField!
     @IBOutlet weak var textfieldPassword: UITextField!
+    @IBOutlet weak var labelEmailError: UILabel!
+    @IBOutlet weak var labelPasswordError: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,16 +39,20 @@ class LoginViewController: UIViewController {
         let email = textfieldEmail.text!
         let password = textfieldPassword.text!
         
-        // Sign in with user
-        Auth.auth().signIn(withEmail: email, password: password) {
-            (result, error) in
-            
-            if error != nil {
-                print("Error signing in")
-            }else{
-                self.transitionToHome()
+        let error = self.validateFields()
+        if !error {
+            // Sign in with user
+            Auth.auth().signIn(withEmail: email, password: password) {
+                (result, error) in
+                
+                if error != nil {
+                    self.labelPasswordError.text = "Invalid credentials"
+                }else{
+                    self.transitionToHome()
+                }
             }
         }
+        
     }
     
     func transitionToHome(){
@@ -54,6 +60,37 @@ class LoginViewController: UIViewController {
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
+    }
+    
+    func validateFields() -> Bool{
+        var error = false
+        let email = textfieldEmail.text
+        let password = textfieldPassword.text
+        labelEmailError.text = ""
+        labelPasswordError.text = ""
+        
+        // Check all fields are valid
+        if email?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            labelEmailError.text = "No email detected"
+            error = true
+        }else if !isValidEmail(email: email!){
+            labelEmailError.text = "Invalid email"
+            error = true
+        }
+        
+        if password?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            labelPasswordError.text = "Enter your password"
+            error = true
+        }
+        
+        return error
+    }
+    
+    func isValidEmail(email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
     }
 
 }

@@ -717,13 +717,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-Cf-s4F">
-                                <rect key="frame" x="255" y="557" width="119" height="29"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                <state key="normal" title="Forgot Password?">
-                                    <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20Z-1d-c8c">
                                 <rect key="frame" x="40" y="686" width="334" height="42"/>
                                 <color key="backgroundColor" red="0.0" green="0.062745098040000002" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -768,9 +761,29 @@
                                 <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5I-oL-hjg">
+                                <rect key="frame" x="40" y="465" width="169" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.6588235294117647" green="0.11764705882352941" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKK-Fc-qW0">
+                                <rect key="frame" x="40" y="557" width="169" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.6588235294" green="0.1176470588" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-Cf-s4F">
+                                <rect key="frame" x="255" y="549" width="119" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="vKK-Fc-qW0" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="40" id="1OA-yR-0p2"/>
                             <constraint firstItem="rFl-Pa-vU0" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="130" id="1R2-TF-BkX"/>
                             <constraint firstItem="cKd-gq-GrJ" firstAttribute="top" secondItem="4ZO-4G-RtG" secondAttribute="bottom" constant="32" id="2Rj-jH-Cfo"/>
                             <constraint firstItem="Ru5-WQ-Z0W" firstAttribute="trailing" secondItem="tgG-Cf-s4F" secondAttribute="trailing" constant="40" id="7qP-AD-xWm"/>
@@ -780,8 +793,9 @@
                             <constraint firstItem="Ru5-WQ-Z0W" firstAttribute="trailing" secondItem="20Z-1d-c8c" secondAttribute="trailing" constant="40" id="AFM-WP-aJh"/>
                             <constraint firstItem="Ru5-WQ-Z0W" firstAttribute="trailing" secondItem="k1o-CE-yWg" secondAttribute="trailing" constant="90" id="ASa-ya-lZl"/>
                             <constraint firstItem="k1o-CE-yWg" firstAttribute="top" secondItem="Ru5-WQ-Z0W" secondAttribute="top" constant="164" id="Dh7-Mn-vX0"/>
-                            <constraint firstItem="tgG-Cf-s4F" firstAttribute="top" secondItem="d78-ut-OWi" secondAttribute="bottom" constant="8" id="UPR-xc-vtG"/>
-                            <constraint firstItem="20Z-1d-c8c" firstAttribute="top" secondItem="tgG-Cf-s4F" secondAttribute="bottom" constant="100" id="Wvx-Rx-JLo"/>
+                            <constraint firstItem="vKK-Fc-qW0" firstAttribute="top" secondItem="d78-ut-OWi" secondAttribute="bottom" constant="8" id="Fvv-UU-B8I"/>
+                            <constraint firstItem="tgG-Cf-s4F" firstAttribute="top" secondItem="d78-ut-OWi" secondAttribute="bottom" id="UPR-xc-vtG"/>
+                            <constraint firstItem="20Z-1d-c8c" firstAttribute="top" secondItem="tgG-Cf-s4F" secondAttribute="bottom" constant="108" id="Wvx-Rx-JLo"/>
                             <constraint firstItem="d78-ut-OWi" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="40" id="Y92-L2-plk"/>
                             <constraint firstItem="d78-ut-OWi" firstAttribute="top" secondItem="4ZO-4G-RtG" secondAttribute="bottom" constant="53" id="YCO-p1-9tn"/>
                             <constraint firstItem="20Z-1d-c8c" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="40" id="auX-p6-vid"/>
@@ -789,6 +803,7 @@
                             <constraint firstItem="d78-ut-OWi" firstAttribute="top" secondItem="cKd-gq-GrJ" secondAttribute="bottom" constant="8" id="bOR-fj-MIG"/>
                             <constraint firstItem="Ru5-WQ-Z0W" firstAttribute="trailing" secondItem="rFl-Pa-vU0" secondAttribute="trailing" constant="129" id="ctO-yn-7WC"/>
                             <constraint firstItem="JAv-wP-6fI" firstAttribute="top" secondItem="rFl-Pa-vU0" secondAttribute="bottom" id="d6a-Vz-Hho"/>
+                            <constraint firstItem="n5I-oL-hjg" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="40" id="eWw-GD-0ul"/>
                             <constraint firstItem="W7E-wU-IeQ" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="77" id="eXt-pH-Gsn"/>
                             <constraint firstItem="Ru5-WQ-Z0W" firstAttribute="trailing" secondItem="cKd-gq-GrJ" secondAttribute="trailing" constant="304" id="fQe-HC-PSn"/>
                             <constraint firstItem="4ZO-4G-RtG" firstAttribute="top" secondItem="97D-gC-cZb" secondAttribute="bottom" constant="8" id="iPQ-Uq-NXs"/>
@@ -800,6 +815,7 @@
                             <constraint firstItem="4ZO-4G-RtG" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="40" id="rMB-Ay-d4Z"/>
                             <constraint firstItem="Ru5-WQ-Z0W" firstAttribute="trailing" secondItem="d78-ut-OWi" secondAttribute="trailing" constant="40" id="rRt-rH-Xrv"/>
                             <constraint firstItem="JAv-wP-6fI" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="153" id="t7U-4C-nIo"/>
+                            <constraint firstItem="n5I-oL-hjg" firstAttribute="top" secondItem="4ZO-4G-RtG" secondAttribute="bottom" constant="3" id="v8e-WR-co5"/>
                             <constraint firstItem="97D-gC-cZb" firstAttribute="top" secondItem="Ru5-WQ-Z0W" secondAttribute="top" constant="311" id="vgt-hw-k3d"/>
                             <constraint firstItem="cKd-gq-GrJ" firstAttribute="leading" secondItem="Ru5-WQ-Z0W" secondAttribute="leading" constant="40" id="xif-qa-v0a"/>
                             <constraint firstItem="Ru5-WQ-Z0W" firstAttribute="trailing" secondItem="W7E-wU-IeQ" secondAttribute="trailing" constant="76.5" id="zlF-Nn-HzL"/>
@@ -808,6 +824,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZfQ-Lk-EU5"/>
                     <connections>
+                        <outlet property="labelEmailError" destination="n5I-oL-hjg" id="0Tc-Uj-75a"/>
+                        <outlet property="labelPasswordError" destination="vKK-Fc-qW0" id="H3e-KF-s41"/>
                         <outlet property="textfieldEmail" destination="4ZO-4G-RtG" id="Fmi-A9-Ev4"/>
                         <outlet property="textfieldPassword" destination="d78-ut-OWi" id="JP4-qP-rhW"/>
                     </connections>
@@ -873,18 +891,55 @@
         <!--Search-->
         <scene sceneID="JNf-SC-ccT">
             <objects>
-                <viewController id="i39-X5-gTb" sceneMemberID="viewController">
+                <viewController id="i39-X5-gTb" customClass="SearchViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KcD-C3-Rry">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-jg-7VL">
+                                <rect key="frame" x="0.0" y="136" width="414" height="677"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellProduct" textLabel="cMR-ML-KPp" style="IBUITableViewCellStyleDefault" id="c5Z-zD-r7W">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c5Z-zD-r7W" id="ffz-un-sGW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cMR-ML-KPp">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="i39-X5-gTb" id="hNN-ul-oy3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cSV-jg-7VL" firstAttribute="trailing" secondItem="yTm-C3-0fX" secondAttribute="trailing" id="0RM-CT-DHc"/>
+                            <constraint firstItem="cSV-jg-7VL" firstAttribute="leading" secondItem="yTm-C3-0fX" secondAttribute="leading" id="eAg-MO-Eur"/>
+                            <constraint firstItem="cSV-jg-7VL" firstAttribute="top" secondItem="yTm-C3-0fX" secondAttribute="top" constant="92" id="rIY-8H-i6O"/>
+                            <constraint firstItem="cSV-jg-7VL" firstAttribute="bottom" secondItem="yTm-C3-0fX" secondAttribute="bottom" id="rvL-t9-4kf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yTm-C3-0fX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="n9t-jq-Huq"/>
+                    <connections>
+                        <outlet property="tableSearch" destination="cSV-jg-7VL" id="zRv-Wl-pK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrC-7W-SEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-381" y="2980"/>
+            <point key="canvasLocation" x="-381.15942028985512" y="2979.9107142857142"/>
         </scene>
     </scenes>
     <resources>
