@@ -544,11 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6f-jT-l94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="2752" y="4363"/>
-=======
-            <point key="canvasLocation" x="2752.1739130434785" y="3629.4642857142853"/>
->>>>>>> 85795b4b77309885d8ddf67297295faca0b3f360
         </scene>
         <!--Help/Legal-->
         <scene sceneID="Z42-57-syX">
@@ -609,11 +605,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YD-oj-Z0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="3506" y="4363"/>
-=======
-            <point key="canvasLocation" x="3505.7971014492755" y="3629.4642857142853"/>
->>>>>>> 85795b4b77309885d8ddf67297295faca0b3f360
+
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="A4W-Sj-NYn">
