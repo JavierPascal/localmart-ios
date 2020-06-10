@@ -18,10 +18,12 @@ class HomeViewController: UIViewController {
     
     var collectionViewFlowLayout: UICollectionViewFlowLayout!
     let cellIdentifier = "UserProductViewCell"
+    let viewProductSegueIndentifier = "viewProductSegueID"
     
     // user
     let preferences = UserDefaults.standard
     weak var user: User!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,8 +125,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        let product = products[indexPath.row]
+        performSegue(withIdentifier: viewProductSegueIndentifier, sender: product)
     }
-    
     
 }

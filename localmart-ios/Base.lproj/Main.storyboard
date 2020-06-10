@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUL-mk-YmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="453.62318840579712" y="4421.6517857142853"/>
+            <point key="canvasLocation" x="725" y="4422"/>
         </scene>
         <!--Account-->
         <scene sceneID="GSO-jG-B7a">
@@ -1233,6 +1233,7 @@
                     <navigationItem key="navigationItem" id="Wh5-wq-mfi"/>
                     <connections>
                         <outlet property="UserProductsCollectionView" destination="uTP-5d-xha" id="a6d-GT-w85"/>
+                        <segue destination="Df3-tE-GcB" kind="show" identifier="viewProductSegueID" id="7JS-0d-AGi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgB-p0-kCk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1375,7 +1376,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cuI-9T-LZV"/>
+        <segue reference="7JS-0d-AGi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>
