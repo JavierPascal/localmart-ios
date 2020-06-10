@@ -16,13 +16,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var labelEmailError: UILabel!
     @IBOutlet weak var labelPasswordError: UILabel!
     
-    
     @IBOutlet weak var buttonLogin: UIButton!
+    
+    let preferences = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        // Do any additional setup after loading the view.
+        checkCurrentUserStatus()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +53,25 @@ class LoginViewController: UIViewController {
                 if error != nil {
                     self.labelPasswordError.text = "Invalid credentials"
                 }else{
+                    let fbDb = Firestore.firestore()
+                    let uid = Auth.auth().currentUser?.uid
+                    let docRef = fbDb.collection("users").document(uid!)
+                    
+                    docRef.getDocument() {
+                        (snapshot, error) in
+                        let data = snapshot!.data()
+                        let name = data?["name"] as! String
+                        let lastname = data?["lastname"] as! String
+                        let email = data?["email"] as! String
+                        let phone = data?["phone"] as! String
+                        let communities = data?["communities"] as! [String]
+                        let user = User(uid: uid!, name: name, lastname: lastname, email: email, phone: phone, communities: communities)
+                        print(user)
+                        
+                        
+                        
+                    }
+                    
                     self.transitionToHome()
                 }
             }
@@ -59,7 +79,15 @@ class LoginViewController: UIViewController {
         
     }
     
-    func transitionToHome(){
+    func checkCurrentUserStatus() {
+        if Auth.auth().currentUser != nil {
+            DispatchQueue.main.async{
+                self.transitionToHome()
+            }
+        }
+    }
+    
+    func transitionToHome() {
         let homeViewController = storyboard?.instantiateViewController(identifier: "HomeTabBarControllerID") as! UITabBarController
         
         view.window?.rootViewController = homeViewController
