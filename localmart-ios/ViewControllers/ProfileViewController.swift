@@ -20,10 +20,21 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        user = preferences.object(forKey: "user") as? User
-        labelUsername.text = user.name + " " + user.lastname
-        labelEmail.text = user.email
-        labelPhone.text = user.phone
+        
+        if let data = preferences.data(forKey: "user") {
+            do {
+                let decoder = JSONDecoder()
+                let temp = try decoder.decode(User.self, from: data)
+                user = temp
+                labelUsername.text = user.name + " " + user.lastname
+                labelEmail.text = user.email
+                labelPhone.text = user.phone
+            } catch {
+                print("Unable to retrieve user")
+            }
+        }
+        
+        
         // Do any additional setup after loading the view.
     }
     

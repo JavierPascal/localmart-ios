@@ -66,9 +66,12 @@ class LoginViewController: UIViewController {
                         let phone = data?["phone"] as! String
                         let communities = data?["communities"] as! [String]
                         let user = User(uid: uid!, name: name, lastname: lastname, email: email, phone: phone, communities: communities)
-                        print(user)
-                        
-                        
+                        do {
+                            let encoder = JSONEncoder()
+                            let data = try encoder.encode(user)
+                            self.preferences.set(data, forKey: "user")
+                            self.preferences.synchronize()
+                        } catch { print("this will never happen") }
                         
                     }
                     
