@@ -12,6 +12,9 @@ class CommunitiesViewController: UIViewController {
 
     @IBOutlet weak var table: UITableView!
     
+    var commArr = ["Tec Cem", "Twitter CDMX", "Arboledas"]
+    var adsArr = ["500 listings", "50 listings", "2000 listings" ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,4 +22,22 @@ class CommunitiesViewController: UIViewController {
     }
     
 
+}
+
+extension CommunitiesViewController: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return commArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "commCell", for: indexPath)
+        
+        let index = indexPath.row
+        cell.textLabel?.text = commArr[index]
+        let subtitle = adsArr[index]
+        cell.detailTextLabel?.text = subtitle
+        return cell
+    }
+    
+    
 }
