@@ -49,9 +49,9 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor.red.cgColor
-        cell?.layer.borderWidth = 2
+        print("hola")
+        let product = products[indexPath.row]
+        performSegue(withIdentifier: "viewProductSegueID", sender: product)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -70,5 +70,7 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
             
         return 1
     }
+    
+    
     
 }

@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--CollectionView-->
         <scene sceneID="iUY-6o-xrY">
             <objects>
-                <viewController storyboardIdentifier="CollectionView" title="CollectionView" id="EuM-RQ-bkc" customClass="CollectionViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CollectionView" title="CollectionView" id="EuM-RQ-bkc" customClass="CollectionViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dng-rP-hFO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,10 +42,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="Cell" id="NAp-da-qJG" customClass="CollectionViewCell" customModule="localmart_ios" customModuleProvider="target">
+                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="Cell" id="NAp-da-qJG" customClass="CollectionViewCell" customModule="LocalMart" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="185"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ub9-Wl-J97" customClass="CollectionViewCell" customModule="localmart_ios" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ub9-Wl-J97" customClass="CollectionViewCell" customModule="LocalMart" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="185"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -79,7 +79,7 @@
                                         <connections>
                                             <outlet property="productImageView" destination="Zti-Ph-qtW" id="sls-za-OD8"/>
                                             <outlet property="productLabel" destination="PTB-YC-mSR" id="k4H-Ve-TWo"/>
-                                            <segue destination="Df3-tE-GcB" kind="show" id="23d-KB-HP1"/>
+                                            <segue destination="Df3-tE-GcB" kind="show" identifier="" id="23d-KB-HP1"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -101,6 +101,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="3io-o7-qw6" id="EpY-xz-kmQ"/>
+                        <segue destination="Df3-tE-GcB" kind="show" identifier="viewProductSegueID" id="cuI-9T-LZV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaM-eW-oMD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -337,7 +338,7 @@
         <!--Profile-->
         <scene sceneID="t3G-Mt-cFn">
             <objects>
-                <viewController title="Profile" id="avn-68-uqR" customClass="ProfileViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Profile" id="avn-68-uqR" customClass="ProfileViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uNi-2r-z0i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,7 +510,7 @@
         <!--Communities-->
         <scene sceneID="ROE-aN-AG7">
             <objects>
-                <viewController title="Communities" id="ICQ-J7-1uQ" customClass="CommunitiesViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Communities" id="ICQ-J7-1uQ" customClass="CommunitiesViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R6X-KB-TvX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -587,7 +588,7 @@
         <!--Settings-->
         <scene sceneID="idI-Al-AKm">
             <objects>
-                <viewController title="Settings" id="bsT-ml-n6o" customClass="SettingsViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="bsT-ml-n6o" customClass="SettingsViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q57-kb-oEF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -711,7 +712,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="A4W-Sj-NYn">
             <objects>
-                <viewController id="200-CK-gkh" customClass="SignUpViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="200-CK-gkh" customClass="SignUpViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VGP-tu-I1q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -923,7 +924,7 @@
         <!--Login View Controller-->
         <scene sceneID="8is-7T-fct">
             <objects>
-                <viewController id="2eP-8w-vab" customClass="LoginViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2eP-8w-vab" customClass="LoginViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dc6-NI-c87">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1080,7 +1081,7 @@
         <!--Forgot Password View Controller-->
         <scene sceneID="Wa4-X3-9Jw">
             <objects>
-                <viewController id="uqS-IV-oRu" customClass="ForgotPasswordViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uqS-IV-oRu" customClass="ForgotPasswordViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U24-TO-2dX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1172,7 +1173,7 @@
         <!--Home View Controller-->
         <scene sceneID="rQ0-Qn-hpX">
             <objects>
-                <viewController id="LRL-ej-jjQ" customClass="HomeViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LRL-ej-jjQ" customClass="HomeViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4P-fe-eVT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1280,7 +1281,7 @@
         <!--Categories-->
         <scene sceneID="JNf-SC-ccT">
             <objects>
-                <viewController id="i39-X5-gTb" customClass="SearchViewController" customModule="localmart_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="i39-X5-gTb" customClass="SearchViewController" customModule="LocalMart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KcD-C3-Rry">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1373,6 +1374,9 @@
             <point key="canvasLocation" x="1362.3188405797102" y="3712.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cuI-9T-LZV"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house" catalog="system" width="128" height="110"/>

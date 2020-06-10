@@ -66,6 +66,7 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.products.removeAll()
         
         if let data = preferences.data(forKey: "user") {
             do {
