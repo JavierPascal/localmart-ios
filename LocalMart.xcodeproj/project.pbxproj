@@ -32,7 +32,7 @@
 		24C7DB742491398A001BAEF8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		24C7DB7924913E32001BAEF8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		24FA1A9524883BCC00039CA5 /* CommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewController.swift; sourceTree = "<group>"; };
-		24FF85B9247F2661007E0D1C /* localmart-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "localmart-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FF85B9247F2661007E0D1C /* LocalMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FF85BC247F2661007E0D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24FF85BE247F2661007E0D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		24FF85C0247F2661007E0D1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		24FF85BA247F2661007E0D1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24FF85B9247F2661007E0D1C /* localmart-ios.app */,
+				24FF85B9247F2661007E0D1C /* LocalMart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 			);
 			name = "localmart-ios";
 			productName = "localmart-ios";
-			productReference = 24FF85B9247F2661007E0D1C /* localmart-ios.app */;
+			productReference = 24FF85B9247F2661007E0D1C /* LocalMart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 24FF85B4247F2661007E0D1C /* Build configuration list for PBXProject "localmart-ios" */;
+			buildConfigurationList = 24FF85B4247F2661007E0D1C /* Build configuration list for PBXProject "LocalMart" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -426,14 +426,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W7NDA3VCWJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "localmart-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.jgb.localmart-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalMart;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,14 +445,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W7NDA3VCWJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "localmart-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.jgb.localmart-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LocalMart;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24FF85B4247F2661007E0D1C /* Build configuration list for PBXProject "localmart-ios" */ = {
+		24FF85B4247F2661007E0D1C /* Build configuration list for PBXProject "LocalMart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24FF85CB247F2662007E0D1C /* Debug */,
