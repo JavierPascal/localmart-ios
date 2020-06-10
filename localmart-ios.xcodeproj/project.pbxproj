@@ -18,6 +18,9 @@
 		24FF85C9247F2662007E0D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF85C7247F2662007E0D1C /* LaunchScreen.storyboard */; };
 		2F083D0B24884A2300DDC2AC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F083D0A24884A2300DDC2AC /* SearchViewController.swift */; };
 		2F0F7C5C24872CC900BE2929 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F7C5B24872CC900BE2929 /* GoogleService-Info.plist */; };
+		2F23BB1924916DED00357E39 /* UserProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23BB1724916DED00357E39 /* UserProductViewCell.swift */; };
+		2F23BB1A24916DED00357E39 /* UserProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F23BB1824916DED00357E39 /* UserProductViewCell.xib */; };
+		2F23BB1C2491755700357E39 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23BB1B2491755700357E39 /* Product.swift */; };
 		2F5796DE2486BCF9006E8164 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5796DD2486BCF9006E8164 /* SignUpViewController.swift */; };
 		2F5796E02486BD04006E8164 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5796DF2486BD04006E8164 /* LoginViewController.swift */; };
 		2F5796E22486BD0D006E8164 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5796E12486BD0D006E8164 /* HomeViewController.swift */; };
@@ -42,6 +45,9 @@
 		24FF85CA247F2662007E0D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F083D0A24884A2300DDC2AC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2F0F7C5B24872CC900BE2929 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2F23BB1724916DED00357E39 /* UserProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProductViewCell.swift; sourceTree = "<group>"; };
+		2F23BB1824916DED00357E39 /* UserProductViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProductViewCell.xib; sourceTree = "<group>"; };
+		2F23BB1B2491755700357E39 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2F5796DD2486BCF9006E8164 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2F5796DF2486BD04006E8164 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F5796E12486BD0D006E8164 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				24C7DB742491398A001BAEF8 /* CollectionViewCell.swift */,
+				2F23BB1724916DED00357E39 /* UserProductViewCell.swift */,
+				2F23BB1824916DED00357E39 /* UserProductViewCell.xib */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2F57A8C624912238001FB26A /* User.swift */,
+				2F23BB1B2491755700357E39 /* Product.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -215,6 +224,7 @@
 				24FF85C6247F2662007E0D1C /* Assets.xcassets in Resources */,
 				24FF85C4247F2661007E0D1C /* Main.storyboard in Resources */,
 				2F0F7C5C24872CC900BE2929 /* GoogleService-Info.plist in Resources */,
+				2F23BB1A24916DED00357E39 /* UserProductViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +284,9 @@
 				24C7DB7A24913E32001BAEF8 /* CollectionViewController.swift in Sources */,
 				24FF85BD247F2661007E0D1C /* AppDelegate.swift in Sources */,
 				2F5796DE2486BCF9006E8164 /* SignUpViewController.swift in Sources */,
+				2F23BB1924916DED00357E39 /* UserProductViewCell.swift in Sources */,
 				2FB4CC66248A3866008FBE8C /* ForgotPasswordViewController.swift in Sources */,
+				2F23BB1C2491755700357E39 /* Product.swift in Sources */,
 				2F5796E02486BD04006E8164 /* LoginViewController.swift in Sources */,
 				24C7DB752491398A001BAEF8 /* CollectionViewCell.swift in Sources */,
 				24FF85BF247F2661007E0D1C /* SceneDelegate.swift in Sources */,
